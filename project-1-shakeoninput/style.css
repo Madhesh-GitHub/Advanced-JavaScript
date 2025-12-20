@@ -1,0 +1,87 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: lightblue;
+}
+
+form{
+    display: flex;
+    width: 300px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    background-color: pink;
+    box-shadow: 0 0 1px 1px rgb(0, 0,  0.05);
+    border-radius: 5px;
+
+
+}
+
+.main{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+input, button{
+    width: 90%;
+    height:40px;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+  
+    
+}
+
+button{
+    background-color: aqua;
+    color: black;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+
+input{
+    border: 1px solid lightblue;
+    color: black
+}
+
+.error-message{
+    color:red;
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+
+}
+
+.shake{
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake{
+    0%{
+        transform:translateX(0); 
+    }
+    25%{
+        transform:translateX(-5px); 
+    }
+    50%{
+        transform:translateX(5px); 
+    }
+    75%{
+        transform:translateX(-5px); 
+    }
+    100%{
+        transform:translateX(0); 
+    }
+}
